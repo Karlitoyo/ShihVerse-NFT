@@ -61,10 +61,15 @@ contract('ShihVerse_nft', (accounts) => {
         // Loop through list and grab ShihVerse
             let result = []
             let ShihVerse_nft
-            for(i = 1; i < totalSupply; i++) {
+            for(i = 1; i <= totalSupply; i++) {
                 ShihVerse_nft = await contract.ShihVerse(i - 1)
                 result.push(ShihVerse_nft)
             }
+
+            // assert that new array result will equal expected result
+
+            let expected = ['https...1','https...2','https...3','https...4']
+            assert.equal(result.join(','), expected.join(','))
     })
 })
 
