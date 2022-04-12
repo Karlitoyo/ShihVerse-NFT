@@ -1,12 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.4.22 <0.9.0;
 
-contract ShihVerse {
-    string private name;
-    string private symbol;
+import "./ERC721Connector.sol";
 
-    constructor() {
-        name = "Shih-Tzu";
-        symbol = "SHIH";
-    }
+contract ShihVerse is ERC721Connector {
+    constructor() ERC721Connector("ShihVerse", "SHIH") {}
 }
