@@ -1,5 +1,6 @@
 import React, { ReactNode, useState } from 'react'
 import Link from 'next/link'
+import MyApp from '../pages/_app';
 
 const Header = () => {
 
