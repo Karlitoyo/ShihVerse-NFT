@@ -2,6 +2,8 @@ import '../styles/globals.css'
 import 'tailwindcss/tailwind.css'
 import { Web3ReactProvider } from '@web3-react/core'
 import Web3 from 'web3'
+import ShihVerse_nft from '../src/abis/ShihVerse_nft.json'
+
 
 function getLibrary(provider) {
     return new Web3(provider)
