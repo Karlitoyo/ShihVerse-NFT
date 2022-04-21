@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/globals.css'
+import '../styles/app.css'
 import 'tailwindcss/tailwind.css'
 import detectEthereumProvider from '@metamask/detect-provider'
 import Web3 from 'web3'
@@ -134,8 +135,6 @@ class MyApp extends Component {
                                             <div className="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3">
                                             </div>
                                             <picture>
-                                                <source srcSet={ShihVerse_nft_token} type="image/webp" />
-                                                <source srcSet={ShihVerse_nft_token} />
                                                 <img className="relative w-40" src={ShihVerse_nft_token} />
                                             </picture>
                                         </div>
