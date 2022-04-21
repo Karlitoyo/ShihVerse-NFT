@@ -33,13 +33,13 @@ const Header = () => {
                             <div className="hidden sm:block sm:ml-6">
                                 <div className="flex space-x-4">
 
-                                    <Link href="/"><a className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">Solution</a></Link>{' '}{' '}
+                                    <Link href="/"><a className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">Marketplace</a></Link>{' '}{' '}
 
-                                    <Link href="/about"><a className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Pricing</a></Link>{' '}{' '}
+                                    <Link href="/about"><a className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Collection</a></Link>{' '}{' '}
 
-                                    <Link href="/users"><a className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Docs</a></Link>{' '}{' '}
+                                    <Link href="/users"><a className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Profile</a></Link>{' '}{' '}
 
-                                    <Link href="/api/users"><a className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a></Link>{' '}{' '}
+                                    <Link href="/api/users"><a className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Settings</a></Link>{' '}{' '}
 
                                 </div>
                             </div>
