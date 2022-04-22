@@ -3,7 +3,9 @@ import Header from '../components/Header'
 
 const IndexPage = () => {
   return (
-    <div></div>
+    <div>
+      <h1>Karl</h1>
+    </div>
   )
 
 }
