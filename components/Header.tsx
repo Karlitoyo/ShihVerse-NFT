@@ -1,8 +1,12 @@
 import React, { ReactNode, useState } from 'react'
 import Link from 'next/link'
-import MyApp from '../pages/_app';
+import { useRouter } from "next/router";
+
 
 const Header = () => {
+
+    const router = useRouter()
+    const currentRoute = router.pathname
 
     const [collapse, setCollapse] = useState(false);
 
@@ -33,13 +37,13 @@ const Header = () => {
                             <div className="hidden sm:block sm:ml-6">
                                 <div className="flex space-x-4">
 
-                                    <Link href="/"><a className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">Marketplace</a></Link>{' '}{' '}
+                                    <Link href="/"><a className={`text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium ${currentRoute === '/' ? 'bg-gray-900' : ''}`}>Home</a></Link>{' '}{' '}
 
-                                    <Link href="/about"><a className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Collection</a></Link>{' '}{' '}
+                                    <Link href="/marketplace"><a className={`text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium ${currentRoute === '/marketplace' ? 'bg-gray-900' : ''}`}>Marketplace</a></Link>{' '}{' '}
 
-                                    <Link href="/users"><a className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Profile</a></Link>{' '}{' '}
+                                    <Link href="/index"><a className={`text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium ${currentRoute === '/index' ? 'bg-gray-900' : ''}`}>Profile</a></Link>{' '}{' '}
 
-                                    <Link href="/api/users"><a className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Settings</a></Link>{' '}{' '}
+                                    <Link href="/api/users"><a className={`text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium ${currentRoute === '//api/users' ? 'bg-gray-900' : ''}`}>Settings</a></Link>{' '}{' '}
 
                                 </div>
                             </div>
@@ -59,38 +63,17 @@ const Header = () => {
                 <div className="sm:hidden" id="mobile-menu">
                     <div className={collapse ? "sm:flex sm:pt-0 w-full sm:w-auto px-2 pt-2 pb-3 space-y-1" : "hidden sm:flex"}>
 
-                        <Link href="/"><a className="font-medium text-gray-300 hover:text-gray-900">Solutions</a></Link>{' '}{' '}
+                        <Link href="/"><a className="font-medium text-gray-300 hover:text-gray-900">Home</a></Link>{' '}{' '}
 
-                        <Link href="/about"><a className="font-medium text-gray-300 hover:text-gray-900">Pricing</a></Link>{' '}{' '}
+                        <Link href="/marketplace"><a className="font-medium text-gray-300 hover:text-gray-900">marketplace</a></Link>{' '}{' '}
 
-                        <Link href="/users"><a className="font-medium text-gray-300 hover:text-gray-900">Docs</a></Link>{' '}{' '}
+                        <Link href="/index"><a className="font-medium text-gray-300 hover:text-gray-900">Profile</a></Link>{' '}{' '}
 
-                        <Link href="/api/users"><a className="font-medium text-gray-300 hover:text-gray-900">About</a></Link>{' '}{' '}
+                        <Link href="/api/users"><a className="font-medium text-gray-300 hover:text-gray-900">Settings</a></Link>{' '}{' '}
                     </div>
                 </div>
             </nav>
-            {/* <nav className="hidden md:flex space-x-10 font-poppins">
-                <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-                    <div className="relative flex items-center justify-between h-16">
-                        <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                            <button onClick={toggle} type="button" className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false"></button>
-                            <span className="sr-only">Open main menu</span>
-                            <Link href="/"><a className="text-base font-medium text-gray-900 hover:text-gray-400">
-                                Solutions
-                            </a></Link>{' '}{' '}
-                            <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-400">
-                                Pricing
-                            </a>
-                            <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-400">
-                                Docs
-                            </a>
-                            <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-400">
-                                Contact
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </nav> */}
+
         </header>
     )
 }

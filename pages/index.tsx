@@ -1,10 +1,11 @@
 import Link from 'next/link'
 import Header from '../components/Header'
 
-const IndexPage = () => (
+const IndexPage = () => {
+  return (
+    <div></div>
+  )
 
-  <Header />
-
-)
+}
 
 export default IndexPage
