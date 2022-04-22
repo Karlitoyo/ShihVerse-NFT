@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import detectEthereumProvider from '@metamask/detect-provider'
 import Web3 from 'web3'
 import ShihVerse_nft from '../src/abis/ShihVerse_nft.json'
-import Header from '../components/Header';
+
 
 
 class Marketplace extends Component {

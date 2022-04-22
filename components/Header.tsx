@@ -1,7 +1,7 @@
 import React, { ReactNode, useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from "next/router";
-
+import Wallet from './Wallet';
 
 const Header = () => {
 
@@ -16,7 +16,7 @@ const Header = () => {
 
     return (
         <header>
-            <nav className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 relative flex items-center justify-between h-16 font-poppins">
+            <nav className="bg-gradient-to-br from-red-500 to-purple-400 relative flex items-center justify-between h-16 font-poppins">
                 <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
                     <div className="relative flex items-center justify-between h-16">
                         <div className="absolute inset-y-0 left-0 flex sm:hidden">
@@ -48,6 +48,7 @@ const Header = () => {
                                 </div>
                             </div>
                         </div>
+                        <Wallet />
                         <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                             <div className="ml-3 relative">
                                 <div>
