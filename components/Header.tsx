@@ -48,7 +48,9 @@ const Header = () => {
                                 </div>
                             </div>
                         </div>
-                        <Wallet />
+                        <div className='justify-end ml-72 -mr-96'>
+                            <Wallet />
+                        </div>
                         <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                             <div className="ml-3 relative">
                                 <div>

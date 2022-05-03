@@ -4,7 +4,7 @@ import Shihverse from '../public/Shihverse-removebg.png'
 
 const IndexPage = () => {
   return (
-    <div className="bg-gradient-to-tr from-red-500 to-purple-400 relative h-screen w-screen">
+    <div className="bg-gradient-to-tr from-red-500 to-purple-400 relative h-screen overflow-hidden">
       <Image src={Shihverse}
         className="absolute inset-0 w-full h-full object-cover filter brightness-50"
         alt="main background image"

@@ -3,8 +3,6 @@ import detectEthereumProvider from '@metamask/detect-provider'
 import Web3 from 'web3'
 import ShihVerse_nft from '../src/abis/ShihVerse_nft.json'
 
-
-
 class Marketplace extends Component {
 
     async componentDidMount() {
