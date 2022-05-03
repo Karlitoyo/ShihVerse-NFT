@@ -43,7 +43,7 @@ const Header = () => {
 
                                     <Link href="/about"><a className={`text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium ${currentRoute === '/index' ? 'bg-gray-900' : ''}`}>Profile</a></Link>{' '}{' '}
 
-                                    <Link href="/api/users"><a className={`text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium ${currentRoute === '//api/users' ? 'bg-gray-900' : ''}`}>Settings</a></Link>{' '}{' '}
+                                    {/* <Link href="/api/users"><a className={`text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium ${currentRoute === '//api/users' ? 'bg-gray-900' : ''}`}>Settings</a></Link>{' '}{' '} */}
 
                                 </div>
                             </div>
@@ -72,7 +72,7 @@ const Header = () => {
 
                         <Link href="/index"><a className="font-medium text-gray-300 hover:text-gray-900">Profile</a></Link>{' '}{' '}
 
-                        <Link href="/api/users"><a className="font-medium text-gray-300 hover:text-gray-900">Settings</a></Link>{' '}{' '}
+                        {/* <Link href="/api/users"><a className="font-medium text-gray-300 hover:text-gray-900">Settings</a></Link>{' '}{' '} */}
                     </div>
                 </div>
             </nav>
