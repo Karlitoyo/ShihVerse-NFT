@@ -6,4 +6,15 @@ module.exports = {
         // !! WARN !!
         ignoreBuildErrors: true,
     },
-}
+
+    exportPathMap: async function (
+        defaultPathMap,
+        { dev, dir, outDir, distDir, buildId }
+      ) {
+        return {
+          '/': { page: '/' },
+          '/marketplace': { page: '/marketplace' },
+          '/index': { page: '/index' },
+        }
+      },
+    }
