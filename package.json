@@ -2,8 +2,12 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "start": "next start",
-    "type-check": "tsc"
+    "build": "next build && next export",
+    "start": "serve out",
+    "type-check": "tsc",
+    "preexport": "npm run build",
+    "export": "next export",
+    "prestart": "npm run export"
   },
   "dependencies": {
     "@babel/core": "^7.17.9",
