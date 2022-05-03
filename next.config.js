@@ -7,6 +7,10 @@ module.exports = {
         ignoreBuildErrors: true,
     },
 
+    images: {
+        loader: 'Vercel',
+        path: '',
+
     exportPathMap: async function (
         defaultPathMap,
         { dev, dir, outDir, distDir, buildId }

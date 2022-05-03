@@ -3,11 +3,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build && next export",
-    "start": "serve out",
-    "type-check": "tsc",
-    "preexport": "npm run build",
-    "export": "next export",
-    "prestart": "npm run export"
+    "start": "next start",
+    "type-check": "tsc"
   },
   "dependencies": {
     "@babel/core": "^7.17.9",
