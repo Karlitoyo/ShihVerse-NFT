@@ -8,7 +8,7 @@ module.exports = {
     },
 
     images: {
-        loader: 'vercel',
+        loader: 'default',
         path: '',
       },
 
