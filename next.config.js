@@ -7,20 +7,20 @@ module.exports = {
         ignoreBuildErrors: true,
     },
 
-    images: {
-        loader: 'default',
-        path: '',
-      },
+    // images: {
+    //     loader: 'default',
+    //     path: '',
+    //   },
 
 
-    exportPathMap: async function (
-        defaultPathMap,
-        { dev, dir, outDir, distDir, buildId }
-      ) {
-        return {
-          '/': { page: '/' },
-          '/marketplace': { page: '/marketplace' },
-          '/index': { page: '/index' },
-        }
-      },
+    // exportPathMap: async function (
+    //     defaultPathMap,
+    //     { dev, dir, outDir, distDir, buildId }
+    //   ) {
+    //     return {
+    //       '/': { page: '/' },
+    //       '/marketplace': { page: '/marketplace' },
+    //       '/index': { page: '/index' },
+    //     }
+    //   },
     }

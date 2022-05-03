@@ -1,16 +1,16 @@
 import Image from 'next/image'
 import Shihverse from '../public/Shihverse-removebg.png'
 
-const myLoader = ({ src }) => {
-  return `/preprocessed-images/${src}`;
-};
+// const myLoader = ({ src }) => {
+//   return `/preprocessed-images/${src}`;
+// };
 
 const IndexPage = () => {
 
   return (
     <div className="bg-gradient-to-tr from-red-500 to-purple-400 relative h-screen overflow-hidden">
       <Image src={Shihverse}
-        loader={myLoader}
+        // loader={myLoader}
         className="absolute inset-0 w-full h-full object-cover filter brightness-50"
         alt="main background image"
       ></Image>
