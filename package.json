@@ -2,9 +2,10 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "export": "next export"
   },
   "dependencies": {
     "@babel/core": "^7.17.9",
