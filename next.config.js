@@ -10,6 +10,8 @@ module.exports = {
     images: {
         loader: 'Vercel',
         path: '',
+      },
+
 
     exportPathMap: async function (
         defaultPathMap,
