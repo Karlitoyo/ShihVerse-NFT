@@ -3,7 +3,8 @@ import detectEthereumProvider from '@metamask/detect-provider'
 import Web3 from 'web3'
 import ShihVerse_nft from '../src/abis/ShihVerse_nft.json'
 
-class Marketplace extends Component {
+class Marketplace extends Component<any, any> {
+    ShihVerse_nft_token: any;
 
     async componentDidMount() {
         await this.loadWeb3();
@@ -17,7 +18,7 @@ class Marketplace extends Component {
 
         if (provider) {
             console.log('ethereum wallet is connected')
-            window.web3 = new Web3(provider)
+            window.web3 = new Web3(provider as any)
         } else {
             console.log('no ethereum wallet connected')
         }
