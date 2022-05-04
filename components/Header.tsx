@@ -25,7 +25,7 @@ const Header = () => {
 
                         <Link href="/marketplace"><a className={`text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium ${currentRoute === '/marketplace' ? 'bg-gray-900' : ''}`}>Marketplace</a></Link>{' '}{' '}
 
-                        <Link href="/about"><a className={`text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium ${currentRoute === '/index' ? 'bg-gray-900' : ''}`}>Profile</a></Link>{' '}{' '}
+                        {/* <Link href="/about"><a className={`text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium ${currentRoute === '/index' ? 'bg-gray-900' : ''}`}>Profile</a></Link>{' '}{' '} */}
 
                     </nav>
 
@@ -42,7 +42,7 @@ const Header = () => {
 
                                 <Link href="/marketplace"><a className="font-medium text-gray-300 hover:text-gray-900">marketplace</a></Link>{' '}{' '}
 
-                                <Link href="/index"><a className="font-medium text-gray-300 hover:text-gray-900">Profile</a></Link>{' '}{' '}
+                                {/* <Link href="/index"><a className="font-medium text-gray-300 hover:text-gray-900">Profile</a></Link>{' '}{' '} */}
 
                             </div>
                         </div>
