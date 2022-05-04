@@ -37,13 +37,13 @@ const Header = () => {
 
                         <div className="sm:hidden" id="mobile-menu">
                             <div className={collapse ? "sm:flex sm:pt-0 w-full sm:w-auto px-2 pt-2 pb-3 space-y-1" : "hidden sm:flex"}>
+                                <li>
+                                    <Link href="/"><a className="font-medium text-gray-300 hover:text-gray-900">Home</a></Link>{' '}{' '}
 
-                                <Link href="/"><a className="font-medium text-gray-300 hover:text-gray-900">Home</a></Link>{' '}{' '}
+                                    <Link href="/marketplace"><a className="font-medium text-gray-300 hover:text-gray-900">Marketplace</a></Link>{' '}{' '}
 
-                                <Link href="/marketplace"><a className="font-medium text-gray-300 hover:text-gray-900">marketplace</a></Link>{' '}{' '}
-
-                                {/* <Link href="/index"><a className="font-medium text-gray-300 hover:text-gray-900">Profile</a></Link>{' '}{' '} */}
-
+                                    {/* <Link href="/index"><a className="font-medium text-gray-300 hover:text-gray-900">Profile</a></Link>{' '}{' '} */}
+                                </li>
                             </div>
                         </div>
                     </button>

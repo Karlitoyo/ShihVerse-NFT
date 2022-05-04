@@ -17,3 +17,11 @@ img {
     margin-top: 10px;
 
 }
+
+li {
+    display: block;
+}
+
+ul, li {list-style-type: none;}
+
+li {padding-left: 2em; text-indent: -2em;}
