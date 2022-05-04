@@ -2,7 +2,7 @@ module.exports = {
 
   networks: {
     development: {
-     host: "172.25.192.1",     // Localhost (default: none)
+     host: "172.23.80.1",     // Localhost (default: none)
      port: 7545,            // Standard Ethereum port (default: none)
      network_id: "*",       // Any network (default: none)
     },

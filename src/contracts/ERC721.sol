@@ -3,13 +3,16 @@ pragma solidity >=0.4.22 <0.9.0;
 
 import "./interfaces/IERC721.sol";
 import "./ERC165.sol";
+import "./libraries/Counters.sol";
 
 contract ERC721 is ERC165, IERC721 {
+    using SafeMath for uint256;
+    using Counters for Counters.Counter;
     // mapping from token id to the owner
     mapping(uint256 => address) private _tokenOwner;
 
     // mapping from owner to number of owned tokens
-    mapping(address => uint256) private _OwnedTokensCount;
+    mapping(address => Counters.Counter) private _OwnedTokensCount;
 
     // mapping from token id to approved addresses
 
@@ -27,7 +30,7 @@ contract ERC721 is ERC165, IERC721 {
 
     function balanceOf(address _owner) public view override returns (uint256) {
         require(_owner != address(0), "owner query for non-existent token");
-        return _OwnedTokensCount[_owner];
+        return _OwnedTokensCount[_owner].current();
     }
 
     /// @notice Find the owner of an NFT
